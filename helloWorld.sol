@@ -1,17 +1,15 @@
 pragma solidity ^0.4.19;
 
-contract Coursetro {
+contract HelloWorld {
     
-   string fName;
-   uint age;
-   
-   function setInstructor(string _fName, uint _age) public {
-       fName = _fName;
-       age = _age;
+   string message;
+
+   function setMessage(string _message) public {
+       message = _message;
    }
    
-   function getInstructor() public constant returns (string, uint) {
-       return (fName, age);
+   function getMessage() public constant returns (string) {
+       return (message);
    }
     
 }
